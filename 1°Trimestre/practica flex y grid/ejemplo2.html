@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practica 2</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        div {
+            border-radius: 5px;
+        }
+
+        #padre {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+        }
+
+
+        #nav_sec {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+
+        }
+
+        #navbdar1 {
+            background-color: green;
+            color: white;
+            height: 3vh;
+            line-height: 3em;
+            height: 3em;
+        }
+
+        #sec1 {
+            background-color: red;
+            color: white;
+            height: 5em;
+            line-height: 4em;
+        }
+
+        #sec2 {
+            background-color: orange;
+            color: white;
+            width: 100%;
+            line-height: 6em;
+        }
+
+        #sec3 {
+            background-color: pink;
+            color: white;
+            width: 100%;
+            line-height: 6em;
+        }
+
+        #sec4 {
+            background-color: deepskyblue;
+            color: white;
+            width: 100%;
+            line-height: 6em;
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav_sec">
+        <div id="navbdar1">Navbar</div>
+        <div id="sec1">Section</div>
+    </div>
+    <div id="padre">
+        <div id="sec2">Section</div>
+        <div id="sec3">Section</div>
+        <div id="sec4">Foter</div>
+    </div>
+</body>
+
+</html>

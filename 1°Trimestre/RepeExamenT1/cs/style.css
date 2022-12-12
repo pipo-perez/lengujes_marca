@@ -1,0 +1,85 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#cabe1Amarillo {
+  background-color: yellow;
+  height: 5em;
+}
+
+#cabe1Amarillo h1 {
+  color: blue;
+  font-family: Arial;
+  font-size: 18pt;
+}
+
+#rosaFondo {
+  background-color: pink;
+  display: flex;
+}
+
+#naranj1 {
+  float: left;
+  background-color: orange;
+  margin-right: 2vh;
+  width: 50%;
+  height: 5em;
+}
+
+#naranj2 {
+  float: left;
+  background-color: orange;
+  margin-right: 2vh;
+  width: 50%;
+  height: 5em;
+}
+
+#naranj3 {
+  float: left;
+  background-color: orange;
+  margin-right: 2vh;
+  /* margin-left: auto; */
+  width: 50%;
+  height: 5em;
+}
+
+#verde {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: green;
+}
+
+#morado1 {
+  background-color: purple;
+  margin-right: 2vh;
+  grid-column: 1/2;
+  width: 55em;
+  height: 13em;
+}
+
+#morado1 h2 {
+  color: white;
+}
+
+#morado2 {
+  background-color: purple;
+  margin-right: 2vh;
+  grid-column: 3/4;
+  width: 64em;
+  height: 13em;
+}
+
+#morado3 {
+  background-color: purple;
+  grid-column: 1/4;
+  margin-top: 1vh;
+
+  height: 10em;
+}
+
+#morado3 p {
+  text-align: center;
+}

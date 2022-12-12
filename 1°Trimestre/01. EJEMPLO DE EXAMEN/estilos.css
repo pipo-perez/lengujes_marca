@@ -1,0 +1,92 @@
+body {
+  background-color: pink;
+}
+h1 {
+  font-size: 20px;
+  font-family: Courier;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+h2 {
+  font-size: 18px;
+  font-family: Courier;
+  font-style: italic;
+}
+p {
+  font-family: Arial;
+  font-size: 10px;
+}
+
+/* 1° div*/
+#cabecera {
+  background-color: white;
+  text-align: center;
+}
+
+/* stylos nav */
+#cabecera li {
+  list-style: none;
+  font-size: 16px;
+  display: inline;
+  background-color: black;
+}
+
+#cabecera li a {
+  color: white;
+}
+
+/* find de stylos nav */
+
+#caja1 {
+  display: inline-block;
+  float: left;
+  width: 30vw;
+  height: 80vh;
+  background-color: blue;
+}
+#caja2 {
+  display: inline-grid;
+  float: left;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 10%;
+  row-content: 10%;
+  justify-content: center;
+  justify-items: strech;
+  align-items: stretch;
+  width: 30vw;
+  height: 80vh;
+  background-color: yellow;
+}
+#caja3 {
+  display: inline-block;
+  float: left;
+  width: 30vw;
+  height: 80vh;
+  background-color: green;
+}
+#caja3 form {
+  padding-left: 3vw;
+}
+#cajag1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: orange;
+}
+#cajag1 img {
+  width: 10vw;
+  height: 10vh;
+  padding-top: 5vh;
+  padding-left: 5vw;
+}
+.cajaa {
+  padding: 5px;
+  background-color: cyan;
+}
+.cajab {
+  padding: 5px;
+  background-color: magenta;
+}

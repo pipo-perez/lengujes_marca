@@ -1,0 +1,141 @@
+body {
+  background: hotpink;
+}
+
+#cabezera1 {
+  background: white;
+  text-align: center;
+}
+
+#cabezera1 li {
+  display: inline;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#cabezera1 li a {
+  color: white;
+}
+
+#cuadrado_mayor {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#caja1 {
+  background-color: blue;
+  width: 30vw;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+/* caja 2*/
+#caja2 {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  background-color: yellow;
+  float: left;
+}
+
+/* caja 1 foto */
+.image_div {
+  width: 5em;
+  height: 3em;
+}
+
+#subacaja1 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  padding-top: 6vh;
+  padding-left: 16vh;
+  background-color: orange;
+}
+
+/* caja 2 rosa */
+#subacaja2 {
+  background-color: deeppink;
+  height: 20vh;
+  margin-right: 5em;
+}
+
+/* caja 3 */
+#subacaja3 {
+  background-color: #00ffff;
+  height: 20vh;
+  margin-right: 5em;
+}
+
+/* caja 4 */
+#subacaja4 {
+  background-color: deeppink;
+  height: 20vh;
+  margin-right: 5em;
+}
+
+/* caja 5 */
+#subacaja5 {
+  background-color: #00ffff;
+  height: 20vh;
+  margin-right: 5em;
+}
+
+/* caja 6 */
+#subacaja6 {
+  background-color: deeppink;
+  height: 20vh;
+}
+
+#subacaja7 {
+  background-color: #00ffff;
+  margin-right: 5em;
+}
+
+#subacaja8 {
+  background-color: deeppink;
+  margin-right: 5em;
+}
+
+#subacaja9 {
+  background-color: #00ffff;
+}
+
+#caja3 {
+  background-color: green;
+  display: inline-block;
+  float: left;
+}
+
+#caja3 h1 {
+  font-style: italic;
+  font-family: Verdana;
+  width: 15em;
+  text-align: center;
+}
+#caja3 form {
+  padding-left: 3vw;
+}
+/* practica mia */
+#cua1 {
+  float: left;
+  width: 3em;
+  height: 4em;
+  background-color: rebeccapurple;
+}
+
+#cua2 {
+  float: left;
+  display: grid;
+  background-color: crimson;
+  width: 3em;
+  height: 4em;
+}
+
+#cua3 {
+  float: left;
+  background-color: coral;
+  width: 3em;
+  height: 4em;
+}

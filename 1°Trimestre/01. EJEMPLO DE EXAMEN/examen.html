@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ejercicio de contenedores</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <div id="cabecera">
+        <h1>Cabecera</h1>
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Productos </a></li>
+            <li><a href="#"> Sobre Nosotros </a></li>
+        </ul>
+    </div>
+    <div id="caja1">
+        <h1>Menu Lateral</h1>
+        <h2> Elementos a realizar en el examen HTML </h2>
+        <ol>
+            <li>Enlaces</li>
+            <li>Listas</li>
+            <li>Tablas</li>
+            <li>Imagenes</li>
+            <li>Formularios</li>
+        </ol>
+    </div>
+    <div id="caja2">
+
+        <div id="cajag1"><img src="gato1.png"></div>
+        <div class="cajab">
+            <p>HTML define el término elemento para referirse a las partes que componen los documentos HTML.</p>
+        </div>
+        <div class="cajaa">
+            <p> Aunque en ocasiones se habla de forma indistinta de "elementos" y "etiquetas", en realidad un elemento
+                HTML es mucho más que una etiqueta, ya que está formado por:</p>
+        </div>
+        <div class="cajab">
+            <ul>
+                <li> Una etiqueta de apertura.</li>
+                <li>Cero o más atributos.</li>
+                <li>Texto encerrado por la etiqueta.</li>
+                <li>Una etiqueta de cierre.</li>
+            </ul>
+        </div>
+        <div class="cajaa">
+            <h1> Lista desplegable que pone las medallas:</h1>
+            <p> bronce, plata, oro </p>
+            <select name="medallas" id="medallas">
+                <option value="bronce">Bronce</option>
+                <option value="plata" selected>Plata</option>
+                <option value="Oro">Oro</option>
+            </select>
+        </div>
+        <div class="cajab">
+            <p>Elegir nacionalidad </p>
+            <p>
+                Española: <input type="radio" name="citizenship" /><br />
+                Rumana: <input type="radio" name="citizenship" /><br />
+                Inglesa: <input type="radio" name="citizenship" />
+            </p>
+        </div>
+        <div class="cajaa">7</div>
+        <div class="cajab">8</div>
+        <div class="cajaa">9</div>
+
+    </div>
+    <div id="caja3">
+        <h1>Formulario </h1>
+        <form action="" target="_blank">
+            <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
+            <p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
+            <p>
+                <label>
+                    Tu mensaje:<br>
+                    <textarea name="mensaje"></textarea>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar mensaje">
+                <input type="reset" value="Comenzar de nuevo">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

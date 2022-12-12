@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Andrés Pérez Illescas</title>
+    <link rel="stylesheet" href="stylo.css" />
+  </head>
+  <body>
+    <div id="cabezera">
+      <h1>CABEZERA</h1>
+      <p>hola</p>
+    </div>
+    <div id="caja_rosa">
+      <div id="cuadro_nara1">uno</div>
+      <div id="cuadro_nara2">dos</div>
+      <div id="cuadro_nara3">tres</div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div id="caja_verde">
+      <div id="cuadro_verde1">
+        <h2>Guia para esta parte</h2>
+      </div>
+      <div id="cuadro_verde2">
+        <form action="" method="post">
+          <p>Tu nombre: <input type="text" name="nombre" /></p>
+          <p>Tu direccioón de correo: <input type="text" name="correo" /></p>
+
+          <p>Selecciona como te ha salido</p>
+          <input type="radio" name="estado" id="estado1" />Bien<br />
+          <input type="radio" name="estado" id="estado2" />Mal<br />
+          <input type="radio" name="estado" id="estado3" />Regular
+          <p>Las opciones del desplegable son JavaScript, PHP, Java,C#,C++</p>
+          <p>Lenguales</p>
+          <select>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+          </select>
+        </form>
+      </div>
+      <div id="cuadro_verde3">
+        <p>Ejemplo de fusion de celdas</p>
+        <table border="1">
+          <tr>
+            <td>Fusion celdas</td>
+            <td>Columna1</td>
+            <td>Columna2</td>
+            <td>Columna3</td>
+            <td>Columna4</td>
+            <td>Columna5</td>
+          </tr>
+          <tr>
+            <td>Fila1</td>
+            <td rowspan="2-3">A</td>
+            <td colspan="2-3">B</td>
+            <td colspan="4-5">C</td>
+          </tr>
+          <tr>
+            <td>Fila2</td>
+            <td rowspan="2-3">D</td>
+            <td colspan="3-4">E</td>
+          </tr>
+          <tr>
+            <td>Fila3</td>
+            <td rowspan="3-4">G</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>Fila4</td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

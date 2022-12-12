@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practica 1</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #titulo_princip {
+            background-color: orange;
+            max-width: 100%;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #colum_padre {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        #colum1 {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            height: 50em;
+            line-height: 6em;
+        }
+
+        #colum2 {
+            color: black;
+            text-align: center;
+            height: 50em;
+            line-height: 6em;
+        }
+
+        #colum3 {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            height: 50em;
+            line-height: 6em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titulo_princip">
+        <h1>Titulo de la página</h1>
+    </div>
+    <div id="colum_padre">
+        <div id="colum1">
+            <p>Lateral izquierdo</p>
+        </div>
+        <div id="colum2">
+            <p>Zona central</p>
+        </div>
+        <div id="colum3">
+            <p>Lateral derecho</p>
+        </div>
+    </div>
+</body>
+
+</html>

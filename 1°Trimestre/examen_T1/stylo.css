@@ -1,0 +1,74 @@
+#cabezera {
+  background-color: yellow;
+}
+
+#cabezera h1 {
+  color: blue;
+}
+
+#cabezera p {
+  font-family: Verdana;
+}
+/* naranja rosa*/
+
+#caja_rosa {
+  background-color: palevioletred;
+  width: 100%;
+  display: flex;
+  margin-top: -1em;
+}
+
+#cuadro_nara1 {
+  float: left;
+  margin: 2em;
+  background-color: orange;
+  width: 30em;
+  height: 15vh;
+}
+
+#cuadro_nara2 {
+  float: left;
+  margin: 2em;
+  background-color: orange;
+  width: 30em;
+  height: 15vh;
+}
+
+#cuadro_nara3 {
+  float: left;
+  margin: 2em;
+  background-color: orange;
+  width: 30em;
+  height: 15vh;
+}
+
+/* morado verde */
+#caja_verde {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: green;
+  margin-top: -6em;
+}
+
+#cuadro_verde1 {
+  background-color: blueviolet;
+  margin-right: 1vh;
+  height: 50vh;
+}
+
+#cuadro_verde1 h2 {
+  color: white;
+}
+
+#cuadro_verde2 {
+  background-color: blueviolet;
+  height: 50vh;
+}
+
+#cuadro_verde3 {
+  background-color: blueviolet;
+  grid-column: 1/3;
+  margin-top: 1vh;
+  height: 20vh;
+}
