@@ -93,7 +93,7 @@
       opacity: 1;
     }
     24% {
-      opacity: 1;
+      opacity: 3;
     }
     40% {
       transform: translateY(-24px);
