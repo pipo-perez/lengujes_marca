@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 58.75rem;
+    gap: .9375rem;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.tarjeta{
+    height: 1.5625rem;
+    width: 18.75rem;
+    overflow: hidden;
+    margin: auto;
+    padding: .625rem 1.875rem;
+    border-radius: 2%;
+    border: .0625rem solid white;
+    transition:  all .4s ease-in-out;
+    box-shadow: 0rem .0625rem .3125rem 0rem rgba(red, green, blue);
+    text-align: center;
+    background: linear-gradient(-135deg, pink, blue);
+}
+
+.tarjeta:hover{
+    height: 31.25rem;
+    width: 18.75rem;
+    border-radius: .3125rem;
+    box-shadow: 0rem .0625rem .3125rem 0rem rgba(red, green, blue);
+}
+
+.tarjetaArriba img{
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    height: 12.5rem;
+    width: 12.5rem;
+    border-top: .5rem solid white;
+    border-bottom: .5rem solid white;
+    object-fit: cover;
+    margin: 1.25rem auto;
+    transition: all 0.8s ease;
+}
