@@ -56,3 +56,79 @@ body{
     margin: 1.25rem auto;
     transition: all 0.8s ease;
 }
+
+.tarjetaIcono{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: .9375rem;
+    list-style: none;
+}
+
+.tarjetaIcono li{
+    border-radius: 50%;
+    background-color: violet;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    text-align: center;
+    transform: scale(0.5rem);
+    /* color: rgb(181, 232, 13); */
+}
+
+.tarjetaIcono li a{
+    color: black;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+/* otra cosa */
+/* CSS */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0rem .0625rem .3125rem 0rem rgba(rgb(56, 186, 145), rgb(99, 174, 99), rgb(97, 97, 186));
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0rem .0625rem .3125rem 0rem rgba(red, green, blue);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  .card p {
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555;
+  }
+  
