@@ -89,12 +89,12 @@ body{
 }
 
 .info{
-    color: black;
+    color: white;
 }
 
 .moverTarjeta{
     text-align: center;
-    margin-top: 1.5625rem;
+    /* margin-top: 1.5625rem; */
 }
 
 .boton{
