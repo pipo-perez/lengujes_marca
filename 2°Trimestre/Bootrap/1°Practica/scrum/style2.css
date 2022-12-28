@@ -97,7 +97,7 @@ body{
     margin-top: 1.5625rem;
 }
 
-/* .boton{
+.boton{
     color: white;
     border: none;
     border-radius: 1.875rem;
@@ -109,4 +109,4 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
