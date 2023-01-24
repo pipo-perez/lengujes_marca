@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prueba 1</title>
+    <title>AHORCADO CHULIS</title>
     <link rel="stylesheet" href="estilakoAhorcado.css" />
     <script src="scripting.js"></script>
   </head>
-  <body>
+  <body onload="">
     <div id="cabecera">
       <h1>AHORCADO</h1>
       <div id="cuerpo">
@@ -18,15 +18,13 @@
         </div>
         <div class="caja">
           <h2>Letras a probar</h2>
-          <form action="">
-            <input
-              type="text"
-              id="letra"
-              placeholder="Escribe una letra"
-              maxlength="1"
-            />
-            <button id="boton" onclick="MostrarDato()">Comprobar</button>
-          </form>
+          <input
+            type="text"
+            id="letra"
+            placeholder="Escribe una letra"
+            maxlength=""
+          />
+          <button id="boton" onclick="CargaDatos()">Comprobar</button>
         </div>
         <div class="caja">
           <h2>Letras usadas</h2>
