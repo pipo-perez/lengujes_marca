@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba 1</title>
+    <link rel="stylesheet" href="estilakoAhorcado.css" />
+    <script src="scripting.js"></script>
+  </head>
+  <body>
+    <div id="cabecera">
+      <h1>AHORCADO</h1>
+      <div id="cuerpo">
+        <div class="caja">
+          <h2>Intentos</h2>
+          <p>El numero de inteos <span id="intento1"></span></p>
+        </div>
+        <div class="caja">
+          <h2>Letras a probar</h2>
+          <form action="">
+            <input
+              type="text"
+              id="letra"
+              placeholder="Escribe una letra"
+              maxlength="1"
+            />
+            <button id="boton" onclick="MostrarDato()">Comprobar</button>
+          </form>
+        </div>
+        <div class="caja">
+          <h2>Letras usadas</h2>
+          <span id="letrasUsadas"></span>
+        </div>
+        <div class="caja">
+          <h2>Resultado: <span id="resultadoFinal"></span></h2>
+        </div>
+        <div class="caja">
+          <h2>Tablero</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
