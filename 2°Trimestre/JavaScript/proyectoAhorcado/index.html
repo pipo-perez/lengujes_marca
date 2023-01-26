@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AHORCADO CHULIS</title>
-    <link rel="stylesheet" href="estilakoAhorcado.css" />
-    <script src="scripting.js"></script>
-  </head>
-  <body onload="">
-    <div id="cabecera">
-      <h1>AHORCADO</h1>
-      <div id="cuerpo">
-        <div class="caja">
-          <h2>Intentos</h2>
-          <p>El numero de inteos <span id="intento1"></span></p>
-        </div>
-        <div class="caja">
-          <h2>Letras a probar</h2>
-          <input
-            type="text"
-            id="letra"
-            placeholder="Escribe una letra"
-            maxlength=""
-          />
-          <button id="boton" onclick="CargaDatos()">Comprobar</button>
-        </div>
-        <div class="caja">
-          <h2>Letras usadas</h2>
-          <span id="letrasUsadas"></span>
-        </div>
-        <div class="caja">
-          <h2>Resultado: <span id="resultadoFinal"></span></h2>
-        </div>
-        <div class="caja">
-          <h2>Tablero</h2>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+<head>
+	<title>Ahorcado</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="ahorcado.js"></script>
+</head>
+<body onload="DatosIniciales()">
+	<div id="central"><h1>Ahorcado</h1></div>
+	<div id="cuerpo">
+		<div class="caja">
+			<h2>Intentos</h2>
+			<p>El número de intentos <span id="intentos"></span></p>
+		</div>
+		<div class="caja">
+			<h2>Letras a probar</h2>
+				<input type="text" name="letra" id="letras" placeholder="Escribe una letra" maxlength="1">
+				<button id="boton" onclick="CargaDatos()">
+					Comprobar
+			</button>
+		</div>
+		<div class="caja">
+			<h2>Letras usadas</h2>
+			<h3 id="letrasUsadas"></h3>
+		</div>
+		<div class="caja">
+			<h2>Resultado:<span id="resultado"></span></h2>
+		</div>
+		<div class="caja">
+			<h2>Tablero</h2>
+			<h2>Palabra para adivinar: <span id="palabraAdivinar"></span></h2>
+			<canvas id="canvas" width="500" height="500" style="border: 1px solid;"> </canvas>
+		</div>
+		<div class="wacho">
+			<a href="https://chat.openai.com/" target="_blank"><p>chatGPT</p></a>
+		</div>
+	</div>	
+</body>	
