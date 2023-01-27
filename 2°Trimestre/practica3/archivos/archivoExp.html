@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenidos</title>
     <link rel="icon" href="img/logo1.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container">
-      <div class="text-cente">
-        <h1>Proyecto de java</h1>
+      <div class="text-center">
+        <h1 class="display-4">Proyecto de java</h1>
       </div>
     </div>
-    <div class="container">
-      <h2>Requisitos</h2>
+    <div class="container bg-dark text-light">
+      <h2 class="text-primary">Requisitos</h2>
       <p>Para abrir una cuenta corriente necesitamos</p>
       <ul>
         <li>DNI y nombre del titular</li>
@@ -29,13 +35,20 @@
           Tanto tras sacar como tras ingresar dinero actualizamos el saldo
         </li>
         <li type="I">
-            
-            Al consultar el saldo mostrar la información de la cuenta:
-            <ul>
-                <li>NOMBRE + DINERO + SALDO</li>
-            </ul>
+          Al consultar el saldo mostrar la información de la cuenta:
+          <ul>
+            <li>NOMBRE + DINERO + SALDO</li>
+          </ul>
         </li>
       </ol>
+    </div>
+    <div class="container bg-dark text-light">
+      <p>Resultado:</p>
+      <img
+        src="../img/cap1.PNG"
+        alt="Captura de pantalla del resultado"
+        class="img-fluid"
+      />
     </div>
   </body>
 </html>
