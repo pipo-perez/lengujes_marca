@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Ahorcado</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="scripting.js"></script>
+</head>
+<body onload="DatosIniciales()">
+	<div id="central"><h1>Ahorcado</h1></div>
+	<div id="cuerpo">
+		<div class="caja">
+			<h2>Intentos</h2>
+			<p>El número de intentos <span id="intentos"></span></p>
+		</div>
+		<div class="caja">
+			<h2>Letras a probar</h2>
+				<input type="text" name="letra" id="letras" placeholder="Escribe una letra" maxlength="1">
+				<button id="boton" onclick="CargaDatos()">
+					Comprobar
+			</button>
+		</div>
+		<div class="caja">
+			<h2>Letras usadas</h2>
+			<h3 id="letrasUsadas"></h3>
+		</div>
+		<div class="caja">
+			<h2>Resultado:<span id="resultado"></span></h2>
+		</div>
+		<div class="caja">
+			<h2>Tablero</h2>
+			<h2>Palabra para adivinar: <span id="palabraAdivinar"></span></h2>
+			<canvas id="canvas" width="500" height="500" style="border: 1px solid;"> </canvas>
+		</div>
+		<div class="wacho">
+			<a href="https://chat.openai.com/" target="_blank"><p>chatGPT</p></a>
+		</div>
+	</div>	
+</body>	
