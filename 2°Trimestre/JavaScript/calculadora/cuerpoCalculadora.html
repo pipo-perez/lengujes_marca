@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULADORA</title>
-    <link rel="stylesheet" href="styloCalcu.css">
+    <link rel="stylesheet" href="styloCalcu.css" />
     <script src="archivo.js"></script>
   </head>
   <body>
+    <!-- <img src="mates.png" alt="matyes" class="imagen"> -->
     <div class="cuerpoCalc">
-      <input type="text" size="30" />
-      <div class="botonesCal">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
+      <div id="operacionUno">0</div>
+      <div id="resultado">1000</div>
+      <!-- Uno -->
+      <div class="cuerpoDentro">
+        <button class="pulsar" onclick="operacion('1')">1</button>
+        <button class="pulsar" onclick="operacion('2')">2</button>
+        <button class="pulsar" onclick="operacion('3')">3</button>
+        <button class="pulsar" onclick="operar('x')">x</button>
+      </div>
+      <!-- Dos -->
+      <div class="cuerpoDentro">
+        <button class="pulsar" onclick="operacion('4')">4</button>
+        <button class="pulsar" onclick="operacion('5')">5</button>
+        <button class="pulsar" onclick="operacion('6')">6</button>
+        <button class="pulsar" onclick="operar('-')">-</button>
+      </div>
+      <!-- Tres -->
+      <div class="cuerpoDentro">
+        <button class="pulsar" onclick="operacion('7')">7</button>
+        <button class="pulsar" onclick="operacion('8')">8</button>
+        <button class="pulsar" onclick="operacion('9')">9</button>
+        <button class="pulsar" onclick="operar('+')">+</button>
+      </div>
+      <!-- Cuatro -->
+      <div class="cuerpoDentro">
+        <button class="pulsar" onclick="limpiar()">C</button>
+        <button class="pulsar" onclick="operacion('0')">0</button>
+        <button class="pulsar" onclick="resultado()">=</button>
+        <button class="pulsar" onclick="operar('/')">/</button>
       </div>
     </div>
   </body>
