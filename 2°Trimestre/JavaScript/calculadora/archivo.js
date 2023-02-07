@@ -1,44 +1,33 @@
 //contiene la operacion 0 reslultado parcial
-let parcial = "";
+let contenido = "";
 //elemento donde se colocan la operacion que se esta realizando
 let operRealizada = document. getElementById("operacionUno");
 //elemento donde se coloca el resultado
 let txtResul = document. getElementById("resultado");
 //ultimo operado seleccionado
 let operadorSeleccionado = "";
-//numero ingresado
+//numero que se va a ingresado
 let numero = "";
 
-//para determinar si lo ultimo presionada es un numero 0 una
+//variable que se usa para determinar si lo ultimo numero presionada es un 0 
 let ultimoDigito = "" ;
 
-function operador(num){
-
-    numero = numero + num;
-
-    parcial = parcial + num;
-
-    if (numero =='0' && operadorSeleccionado == '/') {
-        limpiar();
-        txtResul.innerHTML = "Indefinido";
-        return;
-    }
-
-    if (ultimoDigito == 'operacion') {
-        ultimoDigito = 'numero'
-    }
-}
-
-function limpiar() {
+function operacion(digitosVarios) {
     
-}
-
-function operacion(oper) {
-    
-    operadorSeleccionado = oper;
+    numero = digitosVarios;
 
     ultimoDigito = "operacion";
-    parcial = parcial + oper;
-    numero = 0;
-    operRealizada.innerHTML = parcial;
+    contenido = contenido + digitosVarios;
+    // numero = 0;
+    operRealizada.innerHTML = contenido;
+}
+
+// Llamar a los simbolos de la operación
+function operar(distintasOperaciones) {
+    
+    numero = distintasOperaciones;
+    ultimoDigito = "operar";
+
+    contenido = contenido + distintasOperaciones;
+    operRealizada.innerHTML = contenido;
 }
