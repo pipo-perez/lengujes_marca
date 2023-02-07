@@ -34,6 +34,8 @@ function operar(distintasOperaciones) {
 
 // borrar
 function limpiar() {
-   numero = "";
+    numero = "";
+    contenido = numero;
+
     operRealizada.innerHTML = numero;
 }
