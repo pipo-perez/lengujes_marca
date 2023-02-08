@@ -24,7 +24,7 @@ int main()
             resultado = numero1+numero2;
         else
             if(opcion == '2')
-                resultado = numero1+numero2;
+                resultado = numero1-numero2;
             else
                 if(opcion == '3')
                     resultado = numero1/numero2;
@@ -32,5 +32,6 @@ int main()
                     if(opcion == '4')
                     resultado = numero1*numero2;
                     else
-
-    }
+                        opcion='5';
+    }while(opcion!<'5');
+    printf("El resultado de la operacion es %i\n",resultado);
