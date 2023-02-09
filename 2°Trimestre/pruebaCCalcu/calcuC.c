@@ -5,10 +5,6 @@ int main() {
     int opcion;
 
     do {
-        printf("Escribe el primer numero\n");
-        scanf("%d", &numero1);
-        printf("Escribe el segundo numero\n");
-        scanf("%d", &numero2);
         printf("Escribe el número de operación que deseas realizar\n");
         printf("1. Suma\n");
         printf("2. Resta\n");
@@ -16,6 +12,11 @@ int main() {
         printf("4. Multiplicación\n");
         printf("5. Salir\n");
         scanf(" %i", &opcion);
+        // Eleccion de numeros
+        printf("Escribe el primer numero\n");
+        scanf("%d", &numero1);
+        printf("Escribe el segundo numero\n");
+        scanf("%d", &numero2);
 
         printf("Tu opción escogida es %i\n", opcion);
     
