@@ -1,5 +1,10 @@
-body {
+.cuerpo {
   background-image: url("AbrimosCaminosLogo.png");
+  height: 50em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .cuerpoCalc {
   width: fit-content;
