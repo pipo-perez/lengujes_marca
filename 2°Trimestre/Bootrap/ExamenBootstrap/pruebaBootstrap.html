@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Ejemplo de examen</h1>
+    <!-- Contenedor 1 -->
+    <div class="container-fluid">
+        <h1 class="display-2">Contenedor 1. Tabla</h1>
+        <div class="row">
+            <div class="col-sm-4 border"></div>
+            <div class="col-sm-8 border"></div>
+        </div>
+        <div class="row">
+            <div class="col border"></div>
+            <div class="col border"></div>
+            <div class="col border"></div>
+        </div>
+        <!-- tabla contenedor 1 -->
+        <table class="table table-striped bg-info">
+            <tr>
+                <th>#</th>
+                <th>Primer Trimestre</th>
+                <th>Segundo Trimestre</th>
+                <th>Tercer Trimestre</th>
+            </tr>
+            <tr class="border-top">
+                <td>BDD</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Lengujes de marca</td>
+                <td>4</td>
+                <td>5</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Contenedor 2 -->
+    <div class="container-fluid">
+        <div class="row row-cols-4">
+            <div class="col-sm-2">
+                <!-- 2x2 (anidamiento) -->
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-xl-4"></div>
+            <div class="col"></div>
+        </div>
+        <!-- fotos -->
+        <div class="bg-dark">
+            <img src="gatito.jpeg" alt="" class="img-fluid rounded">
+        </div>
+    </div>
+  </body>
+</html>
