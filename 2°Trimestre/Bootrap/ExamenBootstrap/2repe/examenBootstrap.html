@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen repe</title>
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <script src="../../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1>Ejemplo de examen de bootstrap</h1>
+    <!-- Contenedor 1 -->
+    <div class="container-fluid">
+      <div class="row bg-secondary">
+        <div class="col-4">
+          <!-- tablas -->
+          <h1 class="display-3">Contenedor 1. Tablas</h1>
+          <table class="table table-striped table-info">
+            <tr>
+              <th>#</th>
+              <th>Primer Trimestre</th>
+              <th>SegundoTrimestre</th>
+              <th>Tercer Trimestre</th>
+            </tr>
+            <tr>
+              <td>BBDD</td>
+              <td>8</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Lenguaje de datos</td>
+              <td>4</td>
+              <td>5</td>
+              <td>7</td>
+            </tr>
+          </table>
+          <!-- fin col4 -->
+        </div>
+        <div class="col-8">
+          <!-- conte 2 img -->
+          <h1 class="display-3">Contenedor 2.Imagenes</h1>
+          <img
+            src="gatito.jpeg"
+            class="img-fluid img-thumbnail"
+            alt="foto 1 gato"
+            width="200px"
+            height="200px"
+          />
+          <img
+            src="gatito.jpeg"
+            class="rounded float-end"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+          <!-- fin col8 -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- Contenedor 3 -->
+          <h1 class="display-3">Contenedor 3. Listas horinzontales</h1>
+          <ul class="list-unstyled">
+            <li class="list-inline-item">Texto 1</li>
+            <li class="list-inline-item">Texto 2</li>
+            <li class="list-inline-item">Texto 3</li>
+          </ul>
+          <!-- fin -->
+        </div>
+        <div class="col">
+          <!-- contenedor 4 -->
+          <h1 class="display-3">Contenedor 4.Formularios</h1>
+          <form action="post">
+            <label for="" class="form-label">Correo electronico</label><br />
+            <input
+              type="email"
+              placeholder="nombre@dominio.com"
+              class="form-control"
+            />
+            <select name="" id="" class="form-select">
+              <option selected>Seleccion de genero</option>
+              <option value="hombre" class="form-control">hombre</option>
+              <option value="mujer" class="form-control">mujer</option>
+              <option value="demas" class="form-control">demas</option>
+            </select>
+            <label for="" class="form-label"
+              >Añade los documentos necesarios:</label
+            >
+            <input class="form-control" type="file" />
+            <label class="form-label">Edad</label>
+            <input type="range" class="form-range" />
+            <input
+              type="submit"
+              class="bg-primary text-light rounded p-2"
+              disabled
+              value="Enviar"
+            />
+            <!-- fin formulario -->
+          </form>
+          <!-- fin -->
+        </div>
+        <div class="col">
+          <!-- Contenedor 5 -->
+          <h1 class="display-3">Contenedor 5. Botones desplegables</h1>
+          <!-- <div class="input-group"> -->
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Boton desplegables
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">Opcion1</li>
+            <li class="dropdown-item">Opcion1</li>
+            <li class="dropdown-item">Opcion1</li>
+          </ul>
+          <!-- </div> -->
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+          </ul>
+          <!-- fin -->
+        </div>
+      </div>
+      <!--Fin del contenerdor 1-->
+    </div>
+    <!-- Contenedor 2 -->
+    <div class="container-fluid">
+      <div class="row row-cols-4">
+        <div class="col-sm-2">
+          <!-- anidamiento 1 -->
+          <div class="row row-cols-2">
+            <div class="col">1</div>
+            <div class="col"></div>
+          </div>
+          <!-- columna1 fin -->
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-lg-4"></div>
+      </div>
+      <!-- Fin del contenedor 2 -->
+    </div>
+  </body>
+</html>
