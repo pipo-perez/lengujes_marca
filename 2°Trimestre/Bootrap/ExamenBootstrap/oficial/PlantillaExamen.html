@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plantilla examen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- conteneder todo -->
+    <div class="container-fluid bg-primary">
+      <div class="row bg-warning">
+        <div class="col-fluid">
+          <h1 class="display-1 text-center mr-5 ml-5">EXAMEN DE BOOTSTRAP</h1>
+          <p class="h6 p-3 bg-success">
+            Nombre del alumno: Andrés Pérez Illescas
+          </p>
+        </div>
+        <!-- fila 1 col1 -->
+      </div>
+      <div class="row bg-warning">
+        <!-- fila 1 -->
+        <div class="col">
+          <!-- Fila 1 columna 2-->
+          <p class="h6 text-center">Partes de un ordenador</p>
+          <img src="teclado.jpg" alt="" class="rounded" />
+          <img
+            src="raton-computadora.jpg"
+            alt=""
+            class="float-end rounded"
+            width="300px"
+            height="200px"
+          />
+        </div>
+        <div class="col p-5">
+          <!-- Fila 1 contenedor 3 -->
+          <table class="table bg-secondary">
+            <tr>
+              <th></th>
+              <th>Dato 1</th>
+              <th>Dato 2</th>
+            </tr>
+            <tr>
+              <td class="text-light bg-dark">Teclado</td>
+              <td class="text-light bg-dark">Mecanico</td>
+              <td class="text-light bg-dark">Menbrana</td>
+            </tr>
+            <tr>
+              <td class="bg-light">Raton</td>
+              <td>Adaptado</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- fila 2 -->
+      <div class="row">
+        <div class="col col-3 bg-light">
+          <!-- fila 2 col 4 -->
+          <form action="">
+            <label for="" class="form-label">Nombre:</label>
+            <input
+              type="text"
+              class="form-text"
+              placeholder="Escribe tu nombre"
+            />
+            <label for="" class="form-range">Nota</label>
+            <input type="range" class="form-range" />
+            <input
+              type="submit"
+              class="bg-secondary p-1 border text-light"
+              value="Enviar"
+            />
+          </form>
+        </div>
+        <div class="col col-5">
+          <!-- fila 2 col 5 -->
+          <!-- Select -->
+          <p>Asignatura del examen</p>
+          <select name="" id="" class="form-select">
+            <option selected>Lenguaje de marca</option>
+            <option value="Base de datos">Base de datos</option>
+            <option value="Entornos">Entornos</option>
+          </select>
+          <br />
+          <input
+            type="submit"
+            class="bg-info p-1 border text-dark"
+            value="Enviar"
+          />
+        </div>
+        <div class="col col-4 bg-light">
+          <!-- fila 2 col 6 -->
+          <p class="h3">¿Has realizado el examen?</p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label"
+              >Ha fianlizado a tiempoo</label
+            ><br />
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label">Me falta tiempo</label><br />
+            <input type="checkbox" class="form-check-input" />
+            <label for="" class="form-check-label">No se hacerlo</label><br />
+            <input
+              type="submit"
+              class="bg-secondary p-1 border text-light"
+              value="Enviar"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- fila 3 -->
+      <div class="row row-cols-4-fluid">
+        <div class="col col-sm col-lg">contenido X</div>
+        <div class="col col-sm col-lg">contenido X</div>
+        <div class="col col-sm col-lg">contenido X</div>
+      </div>
+      <!-- fila 3(2) -->
+      <div class="row-md">
+        <div class="col col-xs">contenido X</div>
+      </div>
+      <!-- fin del contenedor -->
+    </div>
+  </body>
+</html>
