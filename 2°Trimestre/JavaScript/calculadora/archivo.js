@@ -1,4 +1,4 @@
-//contiene la operacion 0 reslultado parcial
+//contiene la operacion 0 (reslultado) 
 let contenido = "";
 //elemento donde se colocan la operacion que se esta realizando
 let operRealizada = document. getElementById("operacionUno");
