@@ -1,0 +1,23 @@
+body{
+    background: mediumslateblue
+}
+
+.centroBody{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+}
+
+.fotoVaso{
+    width: 10rem;
+    height: 10rem;
+}
+
+.botonesVarios{
+    cursor: pointer;
+}
