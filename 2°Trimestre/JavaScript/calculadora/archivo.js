@@ -1,41 +1,63 @@
-//contiene la operacion 0 (reslultado) 
-let contenido = "";
-//elemento donde se colocan la operacion que se esta realizando
-let operRealizada = document. getElementById("operacionUno");
-//elemento donde se coloca el resultado
-let txtResul = document. getElementById("resultado");
-//ultimo operado seleccionado
-let operadorSeleccionado = "";
-//numero que se va a ingresado
-let numero = "";
+// Variables globales
+let numero1 = "";
+let numero2 = "";
+let resultadoNumeros = "";
 
-//variable que se usa para determinar si lo ultimo numero presionada es un 0 
-let ultimoDigito = "" ;
-
-function operacion(digitosVarios) {
-    
-    numero = digitosVarios;
-
-    ultimoDigito = "operacion";
-    contenido = contenido + digitosVarios;
-    // numero = 0;
-    operRealizada.innerHTML = contenido;
+// Funciones
+function operacion(numero) {
+  if (resultadoNumeros === "") {
+    numero1 += numero;
+    document.getElementById("operacionUno").innerHTML = numero1;
+  } else {
+    numero2 += numero;
+    document.getElementById("operacionUno").innerHTML = numero1 + " " + resultadoNumeros + " " + numero2;
+  }
 }
 
-// Llamar a los simbolos de la operación
-function operar(distintasOperaciones) {
-    
-    numero = distintasOperaciones;
-    ultimoDigito = "operar";
+function operar(i) {
+  if (numero1 === "") {
+    return;
+  }
 
-    contenido = contenido + distintasOperaciones;
-    operRealizada.innerHTML = contenido;
+  if (numero2 !== "") {
+    resultado();
+  }
+
+  resultadoNumeros = i;
+  document.getElementById("operacionUno").innerHTML = numero1 + " " + resultadoNumeros;
 }
 
-// borrar
 function limpiar() {
-    numero = "";
-    contenido = numero;
+  numero1 = "";
+  numero2 = "";
+  resultadoNumeros = "";
+  document.getElementById("operacionUno").innerHTML = "0";
+  document.getElementById("resultado").innerHTML = "";
+}
 
-    operRealizada.innerHTML = numero;
+function resultado() {
+  let resultadoFinal = 0;
+
+  switch (resultadoNumeros) {
+    case "+":
+      resultadoFinal = parseFloat(numero1) + parseFloat(numero2);
+      break;
+    case "-":
+      resultadoFinal = parseFloat(numero1) - parseFloat(numero2);
+      break;
+    case "x":
+      resultadoFinal = parseFloat(numero1) * parseFloat(numero2);
+      break;
+    case "÷":
+      resultadoFinal = parseFloat(numero1) / parseFloat(numero2);
+      break;
+    default:
+      return;
+  }
+
+  document.getElementById("operacionUno").innerHTML = numero1 + " " + resultadoNumeros + " " + numero2 + " =";
+  document.getElementById("resultado").innerHTML = resultadoFinal;
+  numero1 = res.toString();
+  numero2 = "";
+  resultadoNumeros = "";
 }
