@@ -49,10 +49,10 @@ function EstaAqui(numPos){
 // cuenta atras
 function cuentaAtras(){
     if (tiempo>=0) {
-        document.getElementById("reloj").innerHTML=tiempo;
+        document.getElementById('reloj').innerHTML=tiempo;
         tiempo--;
     }else{
-        document.getElementById("reloj").innerHTML="Se ha acabado el tiempo";
+        document.getElementById('reloj').innerHTML="Se ha acabado el tiempo";
         location.reload();
     }
 
