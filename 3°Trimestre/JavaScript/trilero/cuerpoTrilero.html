@@ -7,26 +7,26 @@
     <title>Trilero</title>
     <link rel="icon" href="vaso.png">
     <link rel="stylesheet" href="styloJs.css">
-    <script src="efectoTrilero.js"></script>
+    <!-- <script src="efectoTrilero.js"></script> -->
 </head>
 <body>
     <div class="centroBody">
         <h1>JUEGO DEL TRILERO</h1>
-        <button class="botonesVarios" onclick="botonTrilero()">
-            <img class="fotoVaso" src="vaso.png" alt="">
+        <button class="botonesVarios" onclick="botonTrilero(1)">
+            <img id="img1" class="fotoVaso" src="vaso.png">
         </button>
-        <button class="botonesVarios" onclick="botonTrilero()">
-            <img class="fotoVaso" src="vaso.png" alt="">
+        <button class="botonesVarios" onclick="botonTrilero(2)">
+            <img id="img2" class="fotoVaso" src="vaso.png">
         </button>
-        <button class="botonesVarios" onclick="botonTrilero()">
-            <img class="fotoVaso" src="vaso.png" alt="">
+        <button class="botonesVarios" onclick="botonTrilero(3)">
+            <img id="img3" class="fotoVaso" src="vaso.png">
         </button>
-        <button class="botonesVarios" onclick="botonTrilero()">
-            <img class="fotoVaso" src="vaso.png" alt="">
+        <button class="botonesVarios" onclick="botonTrilero(4)">
+            <img id="img4" class="fotoVaso" src="vaso.png">
         </button>
         <br>
-        <button id="reseteo">Resetear el juego</button>
-        <div id="mensajeFinal"></div>
+        <div id="reloj"> </div>
     </div>
+    <script src="efectoTrilero.js"></script>
 </body>
 </html>
