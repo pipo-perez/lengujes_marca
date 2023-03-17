@@ -16,3 +16,7 @@ function botonTrilero(numeroVaso) {
     }
 
 }
+
+function reseteo() {
+    location.reload();
+}
