@@ -46,15 +46,15 @@ window.onload = function cargaPrincipal(){
 
 // descubrir pelota
 function DescubrirPelota(posicion) {
-    document.getElementById(posicion).src="pelota.jpeg"
+    document.getElementById(posicion).src="pelota.jpeg";
 }
 
 // cubrir pelota
 function CubrirPelota() {
-    document.getElementById('img1').src="vaso.png"
-    document.getElementById('img2').src="vaso.png"
-    document.getElementById('img3').src="vaso.png"
-    document.getElementById('img4').src="vaso.png"
+    document.getElementById('img1').src="vaso.png";
+    document.getElementById('img2').src="vaso.png";
+    document.getElementById('img3').src="vaso.png";
+    document.getElementById('img4').src="vaso.png";
 }
 
 // funcion ganar perder
