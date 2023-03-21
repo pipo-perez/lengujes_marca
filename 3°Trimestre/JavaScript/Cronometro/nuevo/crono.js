@@ -33,5 +33,6 @@ function resetear() {
 
 // inicio
 window.onload = function Carga(){
+    // alert("hola");
     id=setInterval(reloj,1000);
 }
