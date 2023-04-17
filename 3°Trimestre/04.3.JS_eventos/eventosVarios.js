@@ -2,13 +2,18 @@
 
 function parImpar() {
     let numero = document.getElementById("numero").value;
+<<<<<<< HEAD
     // let cuadro = document.getElementById("resultado").innerHTML = numero;
+=======
+    let cuadro = document.getElementById("resultado").innerHTML = numero;
+>>>>>>> 2bf2fdf47da3b27f23de7d99fbe2497264e02730
 
     if (numero % 2 === 0) {
         resultado.innerHTML ="El número es par.";
     } else {
         resultado.innerHTML ="El número es impar.";
     }
+<<<<<<< HEAD
     // else{
     //     resultado.innerHTML = "Error";
     // }
@@ -20,6 +25,8 @@ function esnumero(numero) {
     }else{
         
     }
+=======
+>>>>>>> 2bf2fdf47da3b27f23de7d99fbe2497264e02730
 }
 
 // Evento 2
