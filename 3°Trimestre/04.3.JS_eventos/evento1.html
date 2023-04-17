@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejc de eventos JS 1</title>
+    <script src="eventosVarios.js"></script>
+    <link rel="stylesheet" href="stiloEvento.css">
+</head>
+<body>
+    <h1>EJERCICIOS FACILES JS</h1>
+    <!--Evento 1-->
+    <h2>Evento 1</h2>
+    <p>
+        Crea un programa que insertando un número en un cuadro de
+        formulario indique si es par o impar.
+    </p>
+
+    <label for="">Escriba aqui sus numeros:</label>
+    <input type="text" id="numero" onkeyup="parImpar()">
+    <p id="resultado"></p>
+    <!-- fin del evento 1 -->
+    <!-- Evento 2 -->
+    <h2>Evento 2</h2>
+    <p>
+    Crea una especie de tablero 2x2 que contenga fotos y cada vez que
+    pase por esa foto se cambie de imagen.
+    </p>
+
+    <table>
+        <tr>
+            <td><img src="img/1.jpg" id="img1" class="fotosEvento2" onmouseover="cambioDeImagen(this)" ></td>
+            <td><img src="img/2.jpg" id="img2" class="fotosEvento2" onmouseover="cambioDeImagen(this)" ></td>
+        </tr>
+        <tr>
+            <td><img src="img/3.jpg" id="img3" class="fotosEvento2" onmouseover="cambioDeImagen(this)" ></td>
+            <td><img src="img/4.jpg" id="img4" class="fotosEvento2" onmouseover="cambioDeImagen(this)" ></td>
+        </tr>
+    </table>
+    <!-- fin del evento 2 -->
+    <!-- Evento 3 -->
+    <h2>Evento 3</h2>
+    <p>
+    Realiza un conversor de tipos de monedas de euros a dólares, yenes,
+    rublos. Dónde la persona introduce en un cuadro de formulario la
+    cantidad que quiere convertir y selecciona mediante un select el tipo
+    de moneda.
+    </p>
+    <form action="">
+        <input type="text" id="dinero">
+        <select name="" id="moneda">
+            <option value="Dolar">Dolar</option>
+            <option value="Yenes">Yenes</option>
+            <option value="Rublos">Rublos</option>            
+        </select>
+    </form>
+    <p id="formResult"></p>
+
+    <!-- Evento 4 -->
+    <h2>Evento 4</h2>
+    <p>
+        Realiza un programa que pasando por una zona concreta genere un
+        número aleatorio.
+    </p>
+
+    <img src="img/1.jpg" onmouseover="imprimirNumRandom()">
+    <p id="imprimirRst"></p>
+</body>
+</html>

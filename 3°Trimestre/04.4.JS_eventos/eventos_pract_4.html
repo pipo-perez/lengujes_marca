@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos 04.4</title>
+    <script src="eventos2.js"></script>
+    <link rel="stylesheet" href="stiloEvento.css">
+</head>
+<body>
+    <!-- Evento 1 -->
+    <!-- fin evento 1 -->
+    <!-- Evento 2 -->
+    <h1>Evento 2</h1>
+    <img src="img/4.jpg" class="fotoPracticaEvento">
+    <p>¿Que animal es?</p>
+    <input type="text" id="entrada" onkeyup="resulFotos(event)">
+    <p id="resultado"></p>
+    <!-- fin evento 2 -->
+    <!-- Evento 4 -->
+    <h1>Evento 4</h1>
+    <table>
+        <tr>
+            <td><img src="img/1.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/2.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/3.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/4.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+        </tr>
+        <tr>
+            <td><img src="img/1.1.png" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/2.2.png" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/3.3.png" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/4.4.png" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+        </tr>
+        <tr>
+            <td><img src="img/5.png" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/5.5.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/6.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+            <td><img src="img/6.6.jpg" class="fotoPracticaEvento" onclick="seleccionarCarta(this)" ></td>
+        </tr>
+    </table>
+
+    <!-- fin evento 4 -->
+    <!-- Evento 5 -->
+    <h1>Evento 5</h1>
+    <table>
+        <tr>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+        </tr>
+        <tr>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+        </tr>
+        <tr>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+            <td id="0" onclick="marcarCasilla(this)"><img src="img/x.png" alt="" srcset=""></td>
+        </tr>
+    </table>
+    <button id="reset-btn">Reiniciar juego</button>
+
+    <!-- fin evento 5 -->
+</body>
+</html>
