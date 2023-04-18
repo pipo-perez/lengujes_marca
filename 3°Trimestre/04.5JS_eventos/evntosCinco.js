@@ -1,5 +1,7 @@
 // evento 1
-
+function validarFormu() {
+    
+}
 // evento 2
 function contarVocales() {
     // Obtenemos la frase ingresada por el usuario

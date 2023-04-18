@@ -16,7 +16,6 @@ function resulFotos(event) {
 
 // evento 4
 // variables evento 4
-<<<<<<< HEAD
 // let numEvento4;
 
 // // carga menu principal
@@ -121,16 +120,3 @@ function resetGame() {
   // Código para reiniciar el juego
   console.log('Juego reiniciado');
 }
-=======
-let numEvento4;
-
-// carga menu principal
-window.onload = function foto_Img(){
-    numEvento4=aleatoriosEvento4(1,6);
-}
-
-// randomizando numeros
-function aleatoriosEvento4(min,max){
-    return Math.floor((Math.random()*(max-min+1))+min);
-}
->>>>>>> 2bf2fdf47da3b27f23de7d99fbe2497264e02730
