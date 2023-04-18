@@ -1,6 +1,26 @@
 // evento 1
 function validarFormu() {
+    const campoNombre = document.getElementById("campoNombre").value;
+    const campoApellido = document.getElementById("campoApellido").value;
+    const campoComentario = document.getElementById("campoComentario").value;
+
+    if (!campoNombre && !campoApellido && !campoComentario) {
+        alert("Ingrese un nombre");
+        // return false;
+    }else if (!campoApellido) {
+        alert("Ingrese un apellido");
+        // return false;        
+    }
     
+    if (campoComentario < 50) {
+        alert("Ingrese un comentario valido");
+        // return false;        
+    }else{
+        alert("Campo obligatorio de 50 caracteres")
+    }
+
+    return true;
+
 }
 // evento 2
 function contarVocales() {
