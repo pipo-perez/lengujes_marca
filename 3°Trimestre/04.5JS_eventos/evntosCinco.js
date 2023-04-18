@@ -1,3 +1,5 @@
+// evento 1
+
 // evento 2
 function contarVocales() {
     // Obtenemos la frase ingresada por el usuario
@@ -33,26 +35,28 @@ function calcuMedia() {
     let nota2 = parseFloat(document.getElementById("nota2").value);
     let nota3 = parseFloat(document.getElementById("nota3").value);
 
-    let mediaFin = (nota1+nota2+nota3) / 3;
-    // mediaFin= document.getElementById("mediaFin").innerHTML;
-    // mediaFin.innerHTML;
-    alert(mediaFin);
+    let mediaFinn = (nota1+nota2+nota3) / 3;
+    mediaFin= document.getElementById("mediaFin").innerHTML = mediaFinn;
+    // mediaFin.innerHTML = "sas";
+    // alert(mediaFin);
 }
 
 // evento 4
 function salarioCalcu() {
     let salarioBruto = parseFloat(document.getElementById("salarioBruto").value);
     let neto = salarioBruto / 14;
-    alert(neto);
+    // alert(neto);
+    impriResultSalario = document.getElementById('impriResultSalario').innerHTML = neto;
 }
 
 // evento 5
 function multiTabla() {
-    let tablaMult = document.getElementById("tablaMult").value;
+    let tablaMult = parseFloat(document.getElementById("tablaMult").value);
     let mostrarTablaFinal = "";
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 11; i++) {
         // mostrarTablaFinal+ " " + tablaMult + "x" + i + "\n" + (tablaMult * i);
-        mostrarTablaFinal += "" + tablaMult + " x " + i + "" + (tablaMult + i) + "\n";
+        mostrarTablaFinal += "" + tablaMult + " x " + i + " = " + (tablaMult * i) + "\n";
     }
     alert(mostrarTablaFinal);
+    // tablaMultiplicarResult = document.getElementById('tablaMultiplicarResult').innerHTML = mostrarTablaFinal;
 }

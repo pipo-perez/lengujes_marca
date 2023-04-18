@@ -8,6 +8,23 @@
     <script src="evntosCinco.js"></script>
 </head>
 <body>
+    <!-- evnto 1 -->
+    <h1>Evento 1</h1>
+    <form action="">
+        <label>Nombre: </label>
+        <input type="text" id="nombre1"><br>
+        <label>Apellido: </label>
+        <input type="text" id="apellido1"><br>
+        <label>Contraseña: </label>
+        <input type="password" id="contraSuprema"><br>
+        <label>Email: </label>
+        <input type="email" id="email1"><br>
+        <label>Comentario: </label>
+        <textarea id="textillo" cols="30" rows="1"></textarea><br>
+        <input type="submit" value="enviar">
+        <input type="reset" id="" value="reseter">
+    </form>
+
     <!-- evento 2 -->
     <h1>Evento 2</h1>
     <h2>Contador de vocales</h2>
@@ -19,29 +36,31 @@
     <!-- evento3 -->
     <h1>Evento 3</h1>
     <p>Introduce las notas para saber la media: </p>
-    <form action="">
+    <form action="javascript:calcuMedia()">
         <label>1° nota:</label>
         <input type="text" id="nota1"><br>
         <label>2° nota:</label>
         <input type="text" id="nota2"><br>
         <label>3° nota:</label>
         <input type="text" id="nota3"><br>
-        <button onclick="calcuMedia()">MEDIA</button>
-        <!-- <p>La nota media es de: <span id="mediaFin"></span></p> -->
+        <button>CALCULAR MEDIA</button>
+        <p>La nota media es de: <span id="mediaFin"></span></p>
     </form>
     <!-- evento 4 -->
     <h1>Evento 4</h1>
-    <form action="">
+    <form action="javascript:salarioCalcu()">
         <label>Salario bruto:</label>
         <input type="text" id="salarioBruto"><br>
-        <button onclick="salarioCalcu()">MEDIA</button>
+        <button>MEDIA</button>
+        <p>Salario neto: <span id="impriResultSalario"></span></p>
     </form>
     <!-- evento 5 -->
     <h1>Evento 5</h1>
-    <form action="">
+    <form action="javascript:multiTabla()">
         <label>Digito para la tabla:</label>
         <input type="text" id="tablaMult"><br>
-        <button onclick="multiTabla()">MEDIA</button>
+        <button>MEDIA</button>
+        <p>tala: <span id="tablaMultiplicarResult"></span></p>
     </form>
 
 
