@@ -26,7 +26,6 @@ function validarFormu() {
 function contarVocales() {
     // Obtenemos la frase ingresada por el usuario
     var frase = document.getElementById("frase").value;
-    
     // Convertimos la frase a minúsculas para simplificar la comparación
     frase = frase.toLowerCase();
     
@@ -42,7 +41,7 @@ function contarVocales() {
     }
     
     // Mostramos las vocales encontradas en la página
-    var lista = document.getElementById("lista-vocales");
+    var lista = document.getElementById("listaVocales");
     lista.innerHTML = "";
     for (var i = 0; i < vocales.length; i++) {
         var li = document.createElement("li");
@@ -62,15 +61,23 @@ function calcuMedia() {
     // mediaFin.innerHTML = "sas";
     // alert(mediaFin);
 }
+// funcion para retear
+function resetearMediaFin() {
+    mediaFin= document.getElementById("mediaFin").innerHTML = " ";
+}
 
 // evento 4
 function salarioCalcu() {
     let salarioBruto = parseFloat(document.getElementById("salarioBruto").value);
     let neto = salarioBruto / 14;
     // alert(neto);
-    impriResultSalario = document.getElementById('impriResultSalario').innerHTML = neto;
+    impriResultSalario = document.getElementById('impriResultSalario').innerHTML = neto+"€";
 }
 
+function resetearSalario() {
+    impriResultSalario = document.getElementById('impriResultSalario').innerHTML = " ";
+
+}
 // evento 5
 function multiTabla() {
     let tablaMult = parseFloat(document.getElementById("tablaMult").value);
@@ -79,6 +86,21 @@ function multiTabla() {
         // mostrarTablaFinal+ " " + tablaMult + "x" + i + "\n" + (tablaMult * i);
         mostrarTablaFinal += "" + tablaMult + " x " + i + " = " + (tablaMult * i) + "\n";
     }
+    // 1° opcion para mostrarlo por pantalla
     alert(mostrarTablaFinal);
+    // 2° opcion para mostrarlo por pantalla
     // tablaMultiplicarResult = document.getElementById('tablaMultiplicarResult').innerHTML = mostrarTablaFinal;
+}
+
+// evento 6
+function palabraPolindroma() {
+    palabraEventoSeis = document.getElementById("palabraEventoSeis").value;
+    var cambio = palabraEventoSeis.split(" ").reverse().join(" ");
+
+    if (palabraEventoSeis === cambio) {
+        document.getElementById("resultadoOperador").innerHTML = "Es una palabra polindroma";
+    }else{
+        document.getElementById("resultadoOperador").innerHTML = "No es una palabra polindroma";
+    }
+   
 }

@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos 04.5</title>
     <script src="evntosCinco.js"></script>
+    <link rel="stylesheet" href="estiloEvento5.css">
 </head>
 <body>
     <!-- evnto 1 -->
     <h1>Evento 1</h1>
+    <div class="contenedorUno">
     <form action="javascript:validarFormu()">
         <label>Nombre:</label>
         <input type="text" id="campoNombre"><br>
@@ -22,19 +24,22 @@
         <label>Comentario:</label>
         <textarea id="campoComentario" cols="30" rows="1"></textarea><br>
         <input type="submit" id="enviarCamposVarios" value="ENVIO">
-        <input type="reset" value="RESETEO">
+        <input type="reset" value="RESETEO" id="enviarCamposVarios1">
     </form>
-
+    </div>
     <!-- evento 2 -->
     <h1>Evento 2</h1>
+    <div class="contenedorDos">
     <h2>Contador de vocales</h2>
 	    <label for="frase">Ingresa una frase:</label>
-	    <input type="text" id="frase">
-	    <button onclick="contarVocales()">Contar vocales</button>
+	    <input type="text" id="frase"><br>
+	    <button onclick="contarVocales()">CONTAR VOCALES</button>
 	    <p>Vocales:</p>
-	    <ul id="lista-vocales"></ul>
+	    <ul id="listaVocales"></ul>
+    </div>
     <!-- evento3 -->
     <h1>Evento 3</h1>
+    <div class="contenedorDos">
     <p>Introduce las notas para saber la media: </p>
     <form action="javascript:calcuMedia()">
         <label>1° nota:</label>
@@ -46,26 +51,37 @@
         <button>CALCULAR MEDIA</button>
         <p>La nota media es de: <span id="mediaFin"></span></p>
     </form>
+    <button onclick="resetearMediaFin()">RESETEAR</button>
+</div>
     <!-- evento 4 -->
     <h1>Evento 4</h1>
+    <div class="contenedorDos"> 
     <form action="javascript:salarioCalcu()">
         <label>Salario bruto:</label>
         <input type="text" id="salarioBruto"><br>
         <button>MEDIA</button>
         <p>Salario neto: <span id="impriResultSalario"></span></p>
     </form>
+    <button onclick="resetearSalario()">Resetear media</button>
     <!-- evento 5 -->
     <h1>Evento 5</h1>
     <form action="javascript:multiTabla()">
         <label>Digito para la tabla:</label>
         <input type="text" id="tablaMult"><br>
         <button>MEDIA</button>
-        <p>tala: <span id="tablaMultiplicarResult"></span></p>
+        <p>taBla: <span id="tablaMultiplicarResult"></span></p>
     </form>
-
-
-
-
+    </div>
+    <!-- Evento 6 -->
+    <h1>Evento 6</h1>
+    <div class="contenedorDos">
+    <form action="javascript:palabraPolindroma()">
+        <label>Palabra polindroma:</label>
+        <input type="text" id="palabraEventoSeis"><br>
+        <button>COMPROBACIÓN</button>
+        <p>Palabra: <span id="resultadoOperador"></span></p>
+    </form>
+    </div>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
-// evento 1
+// evento 2
 function resulFotos(event) {
-    let respuestaCorrecta = "hambster";
+    let respuestaCorrecta = "hamster";
     let respuestaUsuario = document.getElementById("entrada").value;
 
   if (event.keyCode === 13) {
@@ -12,6 +12,34 @@ function resulFotos(event) {
       document.getElementById("resultado").innerHTML = "Incorrecto, intenta de nuevo.";
     }
   }
+}
+
+// evento 3
+function parejas() {
+  //Variables 
+  let respuUno = "Hamster";
+  let respuDos = "Seis";
+  let respuTres = "Cinco";
+
+  // Asignacion de variables
+  pEvent = document.getElementById("pEvent").innerHTML = respuUno;
+  pEventDos = document.getElementById("pEventDos").innerHTML = respuDos;
+  pEventTres = document.getElementById("pEventTres").innerHTML = respuTres;
+
+  if (respuUno === pEvent && respuDos === pEventDos && respuTres === pEventTres) {
+    alert("Pareja encontrada");
+  }else{
+    alert("Casilla incorrecta");
+  }
+
+}
+
+function resetearEventoTres() {
+  pEvent = document.getElementById("pEvent").innerHTML = "Roedor";
+  pEventDos = document.getElementById("pEventDos").innerHTML = "Numero grande";
+  pEventTres = document.getElementById("pEventTres").innerHTML = "Numero pequeño";
+
+
 }
 
 // evento 4

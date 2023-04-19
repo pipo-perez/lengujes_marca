@@ -1,0 +1,17 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tablero{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:  repeat(5,1fr);
+}
+
+button{
+    height:  3.75rem;
+}
+
+h1{
+    text-align: center;
+}

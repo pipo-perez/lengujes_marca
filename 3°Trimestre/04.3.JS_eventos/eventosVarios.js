@@ -50,7 +50,20 @@ function convertidorMonedas() {
 }
 
 // Evento 4
-function imprimirNumRandom(){
-    const num = Math.floor(Math.random() * 100); // genera un número aleatorio entre 0 y 99
-    document.getElementById("imprimirRst").textContent =' Número aleatorio: ${num}';
+// function imprimirNumRandom(){
+//     const num = Math.floor(Math.random() * 100); // genera un número aleatorio entre 0 y 99
+//     document.getElementById("imprimirRst").textContent =' Número aleatorio: ${num}';
+// }
+function mostrarCoordenas(event) {
+    let x, y;
+
+    x=event.clientX;
+    y=event.clientY;
+
+    coordenadas = document.getElementById("coordenadas").innerHTML = "Las coordenadas: x:" +x +" y: "+y;
+
+}
+
+function borrado(){
+    coordenadas = document.getElementById("coordenadas").innerHTML = " ";
 }

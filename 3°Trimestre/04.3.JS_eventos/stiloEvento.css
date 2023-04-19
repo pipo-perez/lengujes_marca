@@ -2,3 +2,14 @@
     width: 25em;
     height: 15em;
 }
+
+#cuadradoFoto{
+    width: 31.25rem;
+    height:  31.25rem;
+    border: .0625rem solid black;
+}
+
+#cuadradoFoto img{
+    width: 31.25rem;
+    height:  31.25rem;
+}
