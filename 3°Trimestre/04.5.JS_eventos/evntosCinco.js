@@ -58,11 +58,9 @@ function calcuMedia() {
 
     let mediaFinn = (nota1+nota2+nota3) / 3;
     mediaFin= document.getElementById("mediaFin").innerHTML = mediaFinn;
-    // mediaFin.innerHTML = "sas";
-    // alert(mediaFin);
 }
 // funcion para retear
-function resetearMediaFin() {
+function resetearMediaFin() {    
     mediaFin= document.getElementById("mediaFin").innerHTML = " ";
 }
 
