@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTOS</title>
+    <link rel="stylesheet" href="stiloEventosJs.css">
+</head>
+<body>
+    <h1>04.3 JAVASCRIPT. EVENTOS</h1>
+    <p>
+        Crea un programa que insertando un número en un cuadro de
+        formulario indique si es par o impar.
+    </p>
+    <form action="javascript:sumaEvt1()">
+        <label>Num1: </label>
+        <input type="text" id="numeroUno"><br>
+        <p>Resultado: <span id="resultEvt1"></span></p>
+    </form>
+
+    <p>
+        Crea una especie de tablero 2x2 que contenga fotos y cada vez que
+        pase por esa foto se cambie de imagen
+    </p>
+
+    <table>
+        <tr>
+            <td><img src="../../04.3.JS_eventos/img/1.jpg" alt="" onmouseover="imagenChulis(this)"></td>
+            <td><img src="../../04.3.JS_eventos/img/2.jpg" alt="" onmouseover="imagenChulis(this)"></td>
+        </tr>
+        <tr>
+            <td><img src="../../04.3.JS_eventos/img/3.jpg" alt="" onmouseover="imagenChulis(this)"></td>
+            <td><img src="../../04.3.JS_eventos/img/4.jpg" alt="" onmouseover="imagenChulis(this)"></td>
+        </tr>
+    </table>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
