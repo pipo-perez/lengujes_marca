@@ -5,7 +5,7 @@ window.onload = function Carga() {
     validarNumerosVarios();
     // verificarCuadradoGeneral();
     // dimensionMatizSudo();
-    alert("hola");
+    // alert("hola");
 }
 
 
