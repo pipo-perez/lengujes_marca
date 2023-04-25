@@ -1,0 +1,22 @@
+#tableta{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+form{
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+table tr td{
+    /* margin: 10px; */
+    padding: 15px;
+    border: 10px;
+}
+
+input{
+    size: 1;
+}

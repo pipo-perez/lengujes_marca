@@ -4,313 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulacro examen</title>
-    <script src="simuInteractuar.js"></script>
+    <title>Sudoku JS</title>
+    <link rel="stylesheet" href="styleSimulacro.css">
+    <!-- <script src="simuInteractuar.js"></script> -->
 </head>
 <body>
-    <table border="1">
-        <!-- fila uno -->
+    <table id="tableta">
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudoku"><input type="text" id="llamaSudoku.0"></td>
+            <td id="llamaSudoku1"><input type="text" id="llamaSudoku1.0"></td>
+            <td id="llamaSudoku2"><input type="text" id="llamaSudoku2.0"></td>
+            <td id="llamaSudoku3"><input type="text" id="llamaSudoku3.0"></td>
+            <td id="llamaSudoku4"><input type="text" id="llamaSudoku4.0"></td>
+            <td id="llamaSudoku5"><input type="text" id="llamaSudoku5.0"></td>
+            <td id="llamaSudoku6"><input type="text" id="llamaSudoku6.0"></td>
+            <td id="llamaSudoku7"><input type="text" id="llamaSudoku7.0"></td>
+            <td id="llamaSudoku8"><input type="text" id="llamaSudoku8.0"></td>
         </tr>
-        <!-- fila dos -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudoku0"><input type="text" id="llamaSudoku.1"></td>
+            <td id="llamaSudoku10"><input type="text" id="llamaSudoku1.1"></td>
+            <td id="llamaSudoku20"><input type="text" id="llamaSudoku2.1"></td>
+            <td id="llamaSudoku30"><input type="text" id="llamaSudoku3.1"></td>
+            <td id="llamaSudoku40"><input type="text" id="llamaSudoku4.1"></td>
+            <td id="llamaSudoku50"><input type="text" id="llamaSudoku5.1"></td>
+            <td id="llamaSudoku60"><input type="text" id="llamaSudoku6.1"></td>
+            <td id="llamaSudoku70"><input type="text" id="llamaSudoku7.1"></td>
+            <td id="llamaSudoku80"><input type="text" id="llamaSudoku8.1"></td>
         </tr>
-        <!-- fila 3 -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!-- 3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuUno"><input type="text" id="llamaSudoku.2"></td>
+            <td id="llamaSudoku11"><input type="text" id="llamaSudoku1.2"></td>
+            <td id="llamaSudoku21"><input type="text" id="llamaSudoku2.2"></td>
+            <td id="llamaSudoku31"><input type="text" id="llamaSudoku3.2"></td>
+            <td id="llamaSudoku41"><input type="text" id="llamaSudoku4.2"></td>
+            <td id="llamaSudoku51"><input type="text" id="llamaSudoku5.2"></td>
+            <td id="llamaSudoku61"><input type="text" id="llamaSudoku6.2"></td>
+            <td id="llamaSudoku71"><input type="text" id="llamaSudoku7.2"></td>
+            <td id="llamaSudoku81"><input type="text" id="llamaSudoku8.2"></td>
         </tr>
-        <!-- primer cubo -->
-        <!-- fila uno -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuDos"><input type="text" id="llamaSudoku.3"></td>
+            <td id="llamaSudoku12"><input type="text" id="llamaSudoku1.3"></td>
+            <td id="llamaSudoku22"><input type="text" id="llamaSudoku2.3"></td>
+            <td id="llamaSudoku32"><input type="text" id="llamaSudoku3.3"></td>
+            <td id="llamaSudoku42"><input type="text" id="llamaSudoku4.3"></td>
+            <td id="llamaSudoku52"><input type="text" id="llamaSudoku5.3"></td>
+            <td id="llamaSudoku62"><input type="text" id="llamaSudoku6.3"></td>
+            <td id="llamaSudoku72"><input type="text" id="llamaSudoku7.3"></td>
+            <td id="llamaSudoku82"><input type="text" id="llamaSudoku8.3"></td>
         </tr>
-        <!-- fila dos -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuTres"><input type="text" id="llamaSudoku.4"></td>
+            <td id="llamaSudoku13"><input type="text" id="llamaSudoku1.4"></td>
+            <td id="llamaSudoku23"><input type="text" id="llamaSudoku2.4"></td>
+            <td id="llamaSudoku33"><input type="text" id="llamaSudoku3.4"></td>
+            <td id="llamaSudoku43"><input type="text" id="llamaSudoku4.4"></td>
+            <td id="llamaSudoku53"><input type="text" id="llamaSudoku5.4"></td>
+            <td id="llamaSudoku63"><input type="text" id="llamaSudoku6.4"></td>
+            <td id="llamaSudoku73"><input type="text" id="llamaSudoku7.4"></td>
+            <td id="llamaSudoku83"><input type="text" id="llamaSudoku8.4"></td>
         </tr>
-        <!-- fila 3 -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--b3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuCuatro"><input type="text" id="llamaSudoku.5"></td>
+            <td id="llamaSudoku14"><input type="text" id="llamaSudoku1.5"></td>
+            <td id="llamaSudoku24"><input type="text" id="llamaSudoku2.5"></td>
+            <td id="llamaSudoku34"><input type="text" id="llamaSudoku3.5"></td>
+            <td id="llamaSudoku44"><input type="text" id="llamaSudoku4.5"></td>
+            <td id="llamaSudoku54"><input type="text" id="llamaSudoku5.5"></td>
+            <td id="llamaSudoku64"><input type="text" id="llamaSudoku6.5"></td>
+            <td id="llamaSudoku74"><input type="text" id="llamaSudoku7.5"></td>
+            <td id="llamaSudoku84"><input type="text" id="llamaSudoku8.5"></td>
         </tr>
-        <!-- segundo cubo -->
-        <!-- fila uno -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuCinco"><input type="text" id="llamaSudoku.6"></td>
+            <td id="llamaSudoku15"><input type="text" id="llamaSudoku1.6"></td>
+            <td id="llamaSudoku25"><input type="text" id="llamaSudoku2.6"></td>
+            <td id="llamaSudoku35"><input type="text" id="llamaSudoku3.6"></td>
+            <td id="llamaSudoku45"><input type="text" id="llamaSudoku4.6"></td>
+            <td id="llamaSudoku55"><input type="text" id="llamaSudoku5.6"></td>
+            <td id="llamaSudoku65"><input type="text" id="llamaSudoku6.6"></td>
+            <td id="llamaSudoku75"><input type="text" id="llamaSudoku7.6"></td>
+            <td id="llamaSudoku85"><input type="text" id="llamaSudoku8.6"></td>
         </tr>
-        <!-- fila dos -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuSeis"><input type="text" id="llamaSudoku.7"></td>
+            <td id="llamaSudoku16"><input type="text" id="llamaSudoku1.7"></td>
+            <td id="llamaSudoku26"><input type="text" id="llamaSudoku2.7"></td>
+            <td id="llamaSudoku36"><input type="text" id="llamaSudoku3.7"></td>
+            <td id="llamaSudoku46"><input type="text" id="llamaSudoku4.7"></td>
+            <td id="llamaSudoku56"><input type="text" id="llamaSudoku5.7"></td>
+            <td id="llamaSudoku66"><input type="text" id="llamaSudoku6.7"></td>
+            <td id="llamaSudoku76"><input type="text" id="llamaSudoku7.7"></td>
+            <td id="llamaSudoku86"><input type="text" id="llamaSudoku8.7"></td>
         </tr>
-        <!-- fila 3 -->
         <tr>
-            <!-- 1 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c2 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <!--c3 -->
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
-            <td id="poscionMatriz" onkeyup="excrituraUser()"></td>
+            <td id="llamaSudokuSiete"><input type="text" id="llamaSudoku.8"></td>
+            <td id="llamaSudoku17"><input type="text" id="llamaSudoku1.8"></td>
+            <td id="llamaSudoku27"><input type="text" id="llamaSudoku2.8"></td>
+            <td id="llamaSudoku37"><input type="text" id="llamaSudoku3.8"></td>
+            <td id="llamaSudoku47"><input type="text" id="llamaSudoku4.8"></td>
+            <td id="llamaSudoku57"><input type="text" id="llamaSudoku5.8"></td>
+            <td id="llamaSudoku67"><input type="text" id="llamaSudoku6.8"></td>
+            <td id="llamaSudoku77"><input type="text" id="llamaSudoku7.8"></td>
+            <td id="llamaSudoku87"><input type="text" id="llamaSudoku8.8"></td>
         </tr>
-        <!-- tercer cubo -->
-        
     </table>
-    <p>informacion: <span id="resultadoSudo"></span></p>
+
+    <form action="javascript:validarNumerosVarios()">
+        <label>Inserte numeros:</label>
+        <input type="text" id="numeroSudokuUno">
+        <p>: <span id="mostrar"></span></p>
+    </form>
+
+    <script src="simuInteractuar.js"></script>
 </body>
 </html>
