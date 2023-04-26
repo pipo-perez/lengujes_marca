@@ -67,3 +67,45 @@ function mostrarCoordenas(event) {
 function borrado(){
     coordenadas = document.getElementById("coordenadas").innerHTML = " ";
 }
+
+// bingo
+let matrix = [
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+]
+
+
+function cargaMatrix() {
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let x = 0; x < matrix[i].length; x++) {
+            let posicion = i+"."+x;
+            document.getElementById(posicion).innerHTML = matrix[i][x];           
+        }        
+    }
+}
+
+// funcion numeros aleatoris
+function numAleatorios(max,min) {
+    return Math.floor((Math.random()*(max-min+1)+min));
+}
+
+function numeros() {
+   //  funcion simple
+   let x,y;
+for (let i = 0; i <30; i++) {
+  let numero = numerosAleatorios(1,9);
+  x=numerosAleatorios(0,8);  
+  y=numerosAleatorios(0,8);  
+
+  matrix[x][y]=numero;
+}
+
+}
+
+// carga visualizacion js a html
+window.onload = function cargaMenu(){
+    numeros();
+    cargaMatrix();
+}
