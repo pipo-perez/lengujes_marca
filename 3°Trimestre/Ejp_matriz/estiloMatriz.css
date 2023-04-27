@@ -1,0 +1,8 @@
+#cabecera{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}

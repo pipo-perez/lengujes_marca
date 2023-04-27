@@ -23,14 +23,6 @@ function convertidorMonedas() {
     let cambio;
     let resust;
 
-    // if (moneda==="Dolares") {
-    //     cambio = 1.06;
-    // }else if (moneda ==="Yenes") {
-    //     cambio = 10.2;
-    // }else if (moneda==="Rublos") {
-    //     moneda = 32.21;
-    // }
-
     switch (moneda) {
         case 'Dolar':
             moneda = dinero * 1.06;
@@ -77,6 +69,7 @@ let matrix = [
 
 
 function cargaMatrix() {
+    // let posicion = document.getElementById("dango").value
 
     for (let i = 0; i < matrix.length; i++) {
         for (let x = 0; x < matrix[i].length; x++) {
@@ -86,26 +79,34 @@ function cargaMatrix() {
     }
 }
 
-// funcion numeros aleatoris
+// funcion numeros aleatorios y mostrar por pantalla
 function numAleatorios(max,min) {
     return Math.floor((Math.random()*(max-min+1)+min));
 }
 
+// imprime eses num aleatorios al bingo
 function numeros() {
    //  funcion simple
-   let x,y;
-for (let i = 0; i <30; i++) {
-  let numero = numerosAleatorios(1,9);
-  x=numerosAleatorios(0,8);  
-  y=numerosAleatorios(0,8);  
+    let x,y;
+    for (let i = 0; i <30; i++) {
+        let numero = numAleatorios(1,9);
+        x=numAleatorios(0,8);  
+        y=numAleatorios(0,8);  
 
-  matrix[x][y]=numero;
+        matrix[x][y]= numero;
+        return matrix;
+    }
 }
 
-}
+// visualizar numeros almacenados   
+function mostarSpanHtml() {
+    // let numSpan = numeros();
+    document.getElementById("mostrarNumBingo").innerHTML = numeros.length;
 
+}
 // carga visualizacion js a html
 window.onload = function cargaMenu(){
     numeros();
     cargaMatrix();
+    // mostarSpanHtml();
 }
