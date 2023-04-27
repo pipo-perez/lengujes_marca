@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+	<title>Bingo</title>
+	<link rel="stylesheet" href="estilos.css"/>
+	</head>
+<body>
+<h1> EJEMPLO BÁSICO JAVASCRIPT - BINGO</h1>
+<div id="cabecera">
+<div id="carton">	
+		
+	<table class="default">
+	  				<tr>
+					    <td id="11" ondblclick="marcarCasillas('11')">Celda 1</td>
+					    <td id="12" ondblclick="marcarCasillas('12')">Celda 2</td>
+					    <td id="13" ondblclick="marcarCasillas('13')">Celda 3</td>
+					    <td id="14" ondblclick="marcarCasillas('14')">Celda 4</td>
+					    <td id="15" ondblclick="marcarCasillas('15')">Celda 5</td>
+					    <td id="16" ondblclick="marcarCasillas('16')">Celda 6</td>
+					    <td id="17" ondblclick="marcarCasillas('17')">Celda 7</td>
+					    <td id="18" ondblclick="marcarCasillas('18')">Celda 8</td>
+					    <td id="19" ondblclick="marcarCasillas('19')">Celda 8</td>   
+	 			   </tr>
+	 			   <tr>
+					    <td id="21" ondblclick="marcarCasillas('21')">Celda 9</td>
+					    <td id="22" ondblclick="marcarCasillas('22')">Celda 10</td>
+					    <td id="23" ondblclick="marcarCasillas('23')">Celda 11</td>
+					    <td id="24" ondblclick="marcarCasillas('24')">Celda 12</td>
+					    <td id="25" ondblclick="marcarCasillas('25')">Celda 13</td>
+					    <td id="26" ondblclick="marcarCasillas('26')">Celda 14</td>
+					    <td id="27" ondblclick="marcarCasillas('27')">Celda 15</td>
+					    <td id="28" ondblclick="marcarCasillas('28')">Celda 16</td>  
+					    <td id="29" ondblclick="marcarCasillas('29')">Celda 16</td> 
+	 			   </tr>
+	 			   <tr>
+					    <td id="31" ondblclick="marcarCasillas('31')">Celda 17</td>
+					    <td id="32" ondblclick="marcarCasillas('32')">Celda 18</td>
+					    <td id="33" ondblclick="marcarCasillas('33')">Celda 19</td>
+					    <td id="34" ondblclick="marcarCasillas('34')">Celda 20</td>
+					    <td id="35" ondblclick="marcarCasillas('35')">Celda 21</td>
+					    <td id="36" ondblclick="marcarCasillas('36')">Celda 22</td>
+					    <td id="37" ondblclick="marcarCasillas('37')">Celda 23</td>
+					    <td id="38" ondblclick="marcarCasillas('38')">Celda 24</td> 
+					    <td id="39" ondblclick="marcarCasillas('39')">Celda 24</td>   
+	 			   </tr>
+
+	</table>
+</div>
+<div id="juego">
+	<div id="numeros"></div>
+	<button name="button" id="comenzar" onclick="comenzar()">Comenzar</button>
+	<button name="button" id="parar" onclick="parar()">Parar</button>	
+	<button name="button" id="continuar" onclick="continuar()">Continuar</button>	
+	<button name="button" id="linea" onclick="">Linea</button>
+	<button name="button" id="bingo" onclick="">Bingo</button>
+</div>	
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#cabecera{
+	display:flex;
+	flex-direction: row;
+}
+#pantalla{
+	color: blue;
+	background-color: hotpink;
+	border: 1px solid;
+}
+#lado{
+	justify-self: stretch;
+	width: 40%;
+}
+#botones{
+	display:grid;
+	grid-template-columns:repeat(5,1fr);
+	grid-template-rows:repeat(5,1fr);
+}
+button{
+	width: 100px;
+}

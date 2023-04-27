@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<title>Bingo</title>
+	<link rel="stylesheet" href="estilos.css"/>
+	</head>
+<body>
+<h1> EJEMPLO BÁSICO JAVASCRIPT - BINGO</h1>
+<div id="cabecera">
+<div id="carton">	
+		
+	<table class="default">
+	  				<tr>
+					    <td id="1" ondblclick="marcarCasillas('1')">Celda 1</td>
+					    <td id="2" ondblclick="marcarCasillas('2')">Celda 2</td>
+					    <td id="3" ondblclick="marcarCasillas('3')">Celda 3</td>
+					    <td id="4" ondblclick="marcarCasillas('4')">Celda 4</td>
+					    <td id="5" ondblclick="marcarCasillas('5')">Celda 5</td>
+					    <td id="6" ondblclick="marcarCasillas('6')">Celda 6</td>
+					    <td id="7" ondblclick="marcarCasillas('7')">Celda 7</td>
+					    <td id="8" ondblclick="marcarCasillas('8')">Celda 8</td>   
+	 			   </tr>
+	 			   <tr>
+					    <td id="9" ondblclick="marcarCasillas('9')">Celda 9</td>
+					    <td id="10" ondblclick="marcarCasillas('10')">Celda 10</td>
+					    <td id="11" ondblclick="marcarCasillas('11')">Celda 11</td>
+					    <td id="12" ondblclick="marcarCasillas('12')">Celda 12</td>
+					    <td id="13" ondblclick="marcarCasillas('13')">Celda 13</td>
+					    <td id="14" ondblclick="marcarCasillas('14')">Celda 14</td>
+					    <td id="15" ondblclick="marcarCasillas('15')">Celda 15</td>
+					    <td id="16" ondblclick="marcarCasillas('16')">Celda 16</td>   
+	 			   </tr>
+	 			   <tr>
+					    <td id="17" ondblclick="marcarCasillas('17')">Celda 17</td>
+					    <td id="18" ondblclick="marcarCasillas('18')">Celda 18</td>
+					    <td id="19" ondblclick="marcarCasillas('19')">Celda 19</td>
+					    <td id="20" ondblclick="marcarCasillas('20')">Celda 20</td>
+					    <td id="21" ondblclick="marcarCasillas('21')">Celda 21</td>
+					    <td id="22" ondblclick="marcarCasillas('22')">Celda 22</td>
+					    <td id="23" ondblclick="marcarCasillas('23')">Celda 23</td>
+					    <td id="24" ondblclick="marcarCasillas('24')">Celda 24</td>   
+	 			   </tr>
+
+	</table>
+</div>
+<div id="juego">
+	<div id="numeros"></div>
+	<button name="button" id="comenzar" onclick="comenzar()">Comenzar</button>
+	<button name="button" id="parar" onclick="parar()">Parar</button>	
+	<button name="button" id="continuar" onclick="continuar()">Continuar</button>	
+	<button name="button" id="linea" onclick="">Linea</button>
+	<button name="button" id="bingo" onclick="comprobarBingo()">Bingo</button>
+</div>	
+</div>
+<script src="script.js"></script>
+</body>
+</html>

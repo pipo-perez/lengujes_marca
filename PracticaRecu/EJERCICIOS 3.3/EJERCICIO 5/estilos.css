@@ -1,0 +1,16 @@
+#cabecera{
+	display: grid;
+	grid-template-columns:repeat(2, 1fr);
+	grid-template-rows:repeat(1, 1fr);
+}
+table,td{
+	 border: black 1px solid;
+	 border-collapse: collapse;
+}
+td{
+	width: 14%;
+}
+#juego{
+	padding: 0px 50px 0px 50px;
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title>CONVERSOR</title>
+	
+	</head>
+<body>
+<h1> EJEMPLO BÁSICO JAVASCRIPT - CONVERSOR</h1>
+<div id="cabecera">
+	
+		
+			 <form action="javascript:convertir()">
+			 	<label for="numero">Numero:</label>
+    			<input type="text" id="numero">
+    			<p>Selecciona la moneda para realizar el cambio:</p>
+				<select id="monedas" onchange="getMoneda()">
+						<option value="sv" seleted></option>
+						<option value="dolares">Dolares</option>
+						<option value="yenes">Yenes</option>
+						<option value="rublos">Rublos</option>
+				</select>
+		        <button type="submit">Aceptar</button>
+    		</form>
+		
+		<div id="conversion"></div>
+	
+</div>
+<script src="script.js"></script>
+</body>
+</html>

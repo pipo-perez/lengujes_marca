@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Juego con Canvas</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="canvas" width="920" height="920"></canvas>
+
+<script>
+	var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var turno=true; // Si es true le toca poner los circulos, si es false las X
+    var AnchoCasilla=300;
+    var AltoCasilla=300;
+    var SeparaciónCasilla=10;
+    var circulos=3;
+    var aspas=3;
+    var casillas=[[0,0,true,null],[310,0,true,null],[620,0,true,null],[0,310,true,null],[310,310,true,null],[620,310,true,null],[0,620,true,null],[310,620,true,null],[620,620,true,null]]
+    var ganado=false; // Nos sirve para terminar el juego
+    var jugadas=1;
+    
+    document.addEventListener("click",jugar,false);
+    
+
+    function PintarCasilla(x,y){
+        ctx.beginPath();
+        ctx.rect(x,y,AnchoCasilla,AltoCasilla);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function tablero(){
+
+        var length = casillas.length;
+        for (var i = 0; i < length; i++) {
+            PintarCasilla(casillas[i][0],casillas[i][1]);
+
+        }
+    }
+    function PintarCirculo(x,y){
+
+        var centrox=(x+AnchoCasilla/2)
+        var centroy=(y+AltoCasilla/2)
+
+        PintarCasilla(x,y);
+
+        ctx.beginPath();
+        ctx.arc(centrox,centroy,125,0,2*Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+
+    }
+    function PintarAspa(x,y){
+
+        var finalx=(x+AnchoCasilla)
+        var finaly=(y+AltoCasilla)
+
+        PintarCasilla(x,y);
+
+        ctx.beginPath();
+        ctx.moveTo(x,y);
+        ctx.lineTo(finalx,finaly);
+        ctx.lineWidth = 10; 
+        ctx.stroke();
+        ctx.closePath()
+
+        ctx.beginPath();
+        ctx.moveTo(finalx,y);
+        ctx.lineTo(x,finaly);
+        ctx.stroke();
+        ctx.closePath()
+
+        }
+    function colocarCasilla(x,y,AnchoCasilla,AltoCasilla,i){
+        //Borro la casilla que existe para que no se quede solapada
+          
+          if(turno==true && circulos>0){
+            //Colocamos piezas con circulo
+            ctx.clearRect(x,y,AnchoCasilla,AltoCasilla);
+            casillas[i][2]=false
+            casillas[i][3]='o';
+            circulos--;
+            PintarCirculo(x,y);
+            turno=false;
+            jugadas++;
+          }
+          else
+          {
+            //Colocamos piezas con aspa
+            if(aspas>0){
+                ctx.clearRect(x,y,AnchoCasilla,AltoCasilla);
+                casillas[i][2]=false
+                casillas[i][3]='x';
+                aspas--;
+                PintarAspa(x,y);
+                turno=true;
+                jugadas++;
+             }   
+          }
+          comprobarJugada();
+    }
+    function comprobarJugada(){
+        i=0;
+        //Linea Horizontal
+        while(i<=8){
+            //ganar línea horinzontal
+            if((casillas[i][3]==casillas[i+1][3])&&(casillas[i][3]==casillas[i+2][3]))
+                if(casillas[i][3]!=null)
+                    ganado=true;
+            i+=3;
+        }
+        //Linea vertical
+            i=0;
+            while(i<3){
+            //ganar línea horinzontal
+            if((casillas[i][3]==casillas[i+3][3])&&(casillas[i][3]==casillas[i+6][3]))
+                if(casillas[i][3]!=null)
+                    ganado=true;
+            i++;
+            }
+        //Diagonales
+            if((casillas[0][3]==casillas[4][3])&&(casillas[0][3]==casillas[8][3]))
+                if(casillas[0][3]!=null)
+                    ganado=true;
+            if((casillas[2][3]==casillas[4][3])&&(casillas[2][3]==casillas[6][3]))
+                if(casillas[2][3]!=null)
+                    ganado=true;
+        
+    }
+    function comprobarCasilla(x,y){
+
+        var length = casillas.length;
+        for (var i = 0; i < length; i++) {
+
+
+            if(x > casillas[i][0] &&  x < (casillas[i][0]+AnchoCasilla) &&  y > casillas[i][1] &&  y < (casillas[i][1]+AltoCasilla) ){
+                if(casillas[i][2]==true) {
+                // Si la casilla esta libre podemos dibujar sobre ella
+                    colocarCasilla(casillas[i][0],casillas[i][1],AnchoCasilla,AltoCasilla,i);
+            }else{
+                        if(jugadas<6){
+                            alert('casilla ocupada')
+                        }
+                        else{
+                            alert('hola')
+                            if(turno==true && casillas[i][3]=='o'){
+                                //En tu turno una vez que has puesto tres fichas puedes cambiarlas de sitio o seguir poniendo
+                                PintarCasilla(casillas[i][0],casillas[i][1]);
+                                casillas[i][3]==null;
+                                circulos++;
+                             }   
+                            else{
+                                //Turno de las aspas, solo puede quitar aspas
+                                if(turno==false && casillas[i][3]=='x'){
+                                    PintarCasilla(casillas[i][0],casillas[i][1]);
+                                    casillas[i][3]==null;
+                                    aspas++;
+                                }
+                            }
+                        }
+
+                        
+            }
+                               
+            }
+        }
+    }
+
+    function jugar(){  
+
+        if(ganado==false){
+            if((turno==true && circulos==0) || (turno==false && aspas==0))
+                alert('Mueve ficha del tablero')
+            comprobarCasilla(event.pageX-300,event.pageY);
+        }
+        else 
+        {
+            if(turno==true)
+                //Han ganado las aspas
+                    alert('Han ganado las cruces')
+            else
+                //Han ganado los circulos
+                    alert('Han ganado los circulos')
+        }
+
+        
+    }
+
+    tablero();
+
+</script>
+
+</body>
+</html>
